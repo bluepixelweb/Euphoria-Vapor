@@ -1,0 +1,143 @@
+---
+layout: 'base.html'
+description: 'All Euphoria Vapor store locations'
+metaTitle: 'Euphoria Vapor | Locations'
+tagTitle: 'Euphoria Vapor | What They Do | Town and State'
+permalink: 'locations/'
+eleventyNavigation:
+    key: Projects
+    order: 300
+---
+
+{% block preload %}
+<link rel="preload" as="image" href="/assets/images/landing-m.jpg">
+{% endblock %}
+
+{% block pageCSS %}
+<link rel="stylesheet" href="/css/locations.css">
+{% endblock %}
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Locations</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images//landing-m.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images//landing.jpg">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images//landing.jpg" alt="" width="400" height="662">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--              Location Columns                -->
+<!-- ============================================ -->
+
+<section>
+	<div class="location-flex">
+		<div class="location-column">
+			<h2 class="locationtitle">Middleburg Heights</h1>
+			<picture class="cs-picture cs-picture1" aria-hidden="true">
+				<source media="(max-width: 600px)" srcset="/assets/images/middleburg-front.webp">
+				<source media="(min-width: 601px)" srcset="/assets/images/middleburg-front.jpg">
+				<img loading="lazy" decoding="async" src="/assets/images/middleburg-front.jpg" alt="house" width="414" height="400">
+			</picture>
+			<div class="Hours">
+				<h3>Hours:</h2>
+				<p>Monday - Saturday: 10am til 8pm</p>
+				<p>Sunday: 11am til 5pm</p>
+			</div>
+			<div location-address>
+				<h3>Address:</h3>
+				<p>7535 Pearl Rd.</p>
+				<p>Middleburg Heights, Ohio 44130</p>
+				<p>(440) 973-4247</p>
+			</div>
+		</div>
+
+		<div class="location-column">
+			<h2 class="locationtitle">Parma</h1>
+			<picture class="cs-picture cs-picture1" aria-hidden="true">
+				<source media="(max-width: 600px)" srcset="/assets/images/parma-front.webp">
+				<source media="(min-width: 601px)" srcset="/assets/images/parma-front.jpg">
+				<img loading="lazy" decoding="async" src="/assets/images/parma-front.jpg" alt="house" width="414" height="400">
+			</picture>
+			<div class="Hours">
+				<h3>Hours:</h3>
+				<p>Monday - Saturday: 10am til 8pm</p>
+				<p>Sunday: 11am til 5pm</p>
+			</div>
+			<div location-address>
+				<h3>Address:</h3>
+				<p>1765 Snow Rd.</p>
+				<p>Parma, Ohio 44134</p>
+				<p>(440) 857-0192</p>
+			</div>
+		</div>
+
+		<div class="location-column">
+			<h2 class="locationtitle">Fairview Park</h1>
+			<picture class="cs-picture cs-picture1" aria-hidden="true">
+				<source media="(max-width: 600px)" srcset="/assets/images/fairview-front.webp">
+				<source media="(min-width: 601px)" srcset="/assets/images/fairview-front.jpg">
+				<img loading="lazy" decoding="async" src="/assets/images/fairview-front.jpg" alt="house" width="414" height="400">
+			</picture>
+			<div class="Hours">
+				<h3>Hours:</h2>
+				<p>Monday - Saturday: 10am til 8pm</p>
+				<p>Sunday: 11am til 5pm</p>
+			</div>
+			<div location-address>
+				<h3>Address:</h3>
+				<p>22906 Lorain Rd.</p>
+				<p>Fairview Park, Ohio 44126</p>
+				<p>(440) 385-7918</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Middleburg
+Mon - Sat 10-8
+Sun 11-5
+7535 Pearl Rd.
+Middleburg Heights, Ohio 44130
+(440) 973-4247
+
+-->
+
+<!-- Parma 
+Mon-Fri 10-8
+Sun 11-5
+1765 Snow Rd.
+Parma, Ohio 44134
+(440) 857-0192
+
+-->
+<!-- Fairview Park
+Mon-Fri 10-8
+Sun 11-5
+22906 Lorain Rd.
+Fairview Park, Ohio 44126
+-->
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+    <div class="container">
+        <h2 class="title">Contact Us <br>  Today</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, placeat!
+        </p>
+        <a href="/contact.html" class="button-solid">Free Estimate</a>
+    </div>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images//landing-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images//landing.jpg">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images//landing.jpg" alt="kitchen cabinets" width="1920" height="1280">
+        </picture>
+</section>

@@ -26,22 +26,16 @@
             <span aria-hidden="true"></span>
         </button>
 
-        <!--Main Nav-->
-        <nav id="navbar-menu" aria-label="main navigation">
-            <ul>
-            {%- for entry in navPages %}
-                <li>
-                    <a 
-                        {% if entry.url == page.url %} class="active" {% endif %}
-                        href="{{ entry.url }}"
-                    >
-                        {{ entry.title }}
-                    </a>
-                </li>
-            {%- endfor %}
-            </ul>
-        </nav>
-
+<!--Main Nav-->
+<nav id="navbar-menu">
+    <ul>
+        <li><a class="{{ 'active' if '' == page.fileSlug }}" href="/">Home</a></li>
+        <li><a class="{{ 'active' if 'about' == page.fileSlug }}" href="/about">About Us</a></li>
+        <li><a class="{{ 'active' if 'locations' == page.fileSlug }}" href="/locations">Locations</a></li>
+        <li><a class="{{ 'active' if 'blog' == page.fileSlug }}" href="/blog">News</a></li>
+        <li><a class="{{ 'active' if 'contact' == page.fileSlug }}" href="/contact">Contact</a></li>
+    </ul>
+</nav>
         <!--Dark Mode toggle-->
         <button id="dark-mode-toggle">
             <!--Moon is an inline SVG so you can edit the color if needed-->
