@@ -1,10 +1,10 @@
 ---
 pageName: blog-template
 blogTitle: EV News
-titleTag: 'EVNews Template | Cixi Music Studio'
+titleTag: 'Title Goes Here | Euphoria Vapor News'
 blogDescription: .
-author: Joe Mendez
-date: 2022-07-18T15:46:45.249Z
+author: Mike Neal
+date: 2023-1-10T15:46:45.249Z
 tags:
   - post
   - featured
