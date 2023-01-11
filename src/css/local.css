@@ -37,8 +37,9 @@
     border-radius: 1.5em;
     /* clips img tag corners */
     overflow: hidden;
-    position: absolute;
+    position: relative;
     display: block;
+    margin: auto;
   }
   #sbs .cs-picture img {
     position: absolute;

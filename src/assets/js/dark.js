@@ -9,42 +9,46 @@ var body = document.querySelector("body");
 const darkModeToggle = document.querySelector("#dark-mode-toggle");
 
 // Get Status of Dark Mode
-let darkMode = localStorage.getItem("darkMode");
+let darkMode = sessionStorage.getItem("darkMode");
 
 // Enable Dark Mode
 const enableDarkMode = () => {
   body.classList.add("dark-mode");
-  localStorage.setItem("darkMode", "enabled")
 }
 
 // Disable Dark mode
 const disableDarkMode = () => {
   body.classList.remove("dark-mode");
-  localStorage.setItem("darkMode", null)
 }
 
-// Check the state of dark mode in local storage
+// Check the state of dark mode in session storage
 if (darkMode == "enabled") {
   enableDarkMode();
-}
-//check user's OS level dark mode preference
-const darkModePreference = window.matchMedia('(prefers-color-scheme: dark)');
-
-// Check if the user has a preference for dark mode
-if (darkModePreference.matches) {
-  // If the user has a preference for dark mode, enable it
-  enableDarkMode();
-}
-
-// add event listener to the dark mode button toggle
-darkModeToggle.addEventListener('click', () => {
-  // on click, check localstorage for the dark mode value
-  darkMode = localStorage.getItem("darkMode");
-  if (darkMode !== "enabled") {
-    // if dark mode is not enabled, run this function to set it to enabled
-    enableDarkMode();
-  } else {
-    // if dark mode is enabled, run this function to set it to disabled
+} else {
     disableDarkMode();
+}
+
+const darkModePreference = window.matchMedia('(prefers-color-scheme: dark)');
+darkModePreference.addEventListener("change", function(event) {
+  if (event.matches) {
+    enableDarkMode();
+    sessionStorage.setItem("darkMode", "enabled")
+  } else {
+    disableDarkMode();
+    sessionStorage.setItem("darkMode", null)
   }
-})
+});
+
+// Add event listener to the dark mode button toggle
+darkModeToggle.addEventListener('click', () => {
+  darkMode = sessionStorage.getItem("darkMode");
+  if (darkMode !== "enabled") {
+    enableDarkMode();
+    sessionStorage.setItem("darkMode", "enabled")
+  } else {
+    disableDarkMode();
+    sessionStorage.setItem("darkMode", null)
+  }
+});
+
+darkModePreference.removeEventListener("change", function(event){});

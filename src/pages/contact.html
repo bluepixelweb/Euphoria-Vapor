@@ -43,7 +43,7 @@ eleventyNavigation:
                 <span class="cs-topper">Contact</span>
                 <h2 class="cs-title">Get in Touch</h2>
                 <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                    Get in contact with any questions or concerns you have, or see our <a href="/locations">Locations</a> to reach out to an one of our three locations.
                 </p>
             </div>
             <label>
@@ -58,34 +58,30 @@ eleventyNavigation:
                 Phone
                 <input required type="text" id="phone" name="phone" placeholder="Phone">
             </label>
-            <label>
-                How Did You Find Us
-                <input type="text" id="find" name="find-us" placeholder="How did you find us?">
-            </label>
             <label class="cs-label-message">
                 Message
                 <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
             </label>
             <button class="cs-button-solid" type="submit">Submit Message</button>
         </form>
-        <div class="cs-right-section">
-            <!--Email-->
-            <span class="cs-header">Email</span>
-            <a class="cs-link" href="mailto:support@yourdomain.com">support@yourdomain.com</a>
-            <!--Phone-->
-            <span class="cs-header">Phone</span>
-            <a class="cs-link" href="tel:219-555-1234">(219) 555-1234</a>
-            <!--Address-->
-            <span class="cs-header">Address</span>
-            <a class="cs-link" href="">2553 Woodbridge Lane, <span class="cs-block">Boston Ware 120</span></a>
-
-            <!-- Background Image-->
-            <picture aria-hidden="true" class="cs-bg-picture">
-                <source media="(max-width: 600px)" srcset="/assets/images/skyscraper-m.jpg">
-                <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" width="542" height="662">
-            </picture>
-        </div>
     </div>
+</section>
+
+
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+    <div class="container">
+        <h2 class="title">View all 3 of our locations</h2>
+        <a href="/locations" class="button-solid">Locations</a>
+    </div>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/landing.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/landing.jpg" alt="Wide shot of the interior of our Middleburg location" width="1920" height="1280">
+        </picture>
 </section>
                                 

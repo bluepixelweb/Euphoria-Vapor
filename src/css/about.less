@@ -26,14 +26,18 @@
             width: 631/16em;
             height: 636/16em;
             position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
         }
 
         .cs-picture {
             border-radius: 24/16em;
             /* clips img tag corners */
             overflow: hidden;
-            position: absolute;
+            position: relative;
             display: block;
+			margin-left: 0 auto;
             img {
                 position: absolute;
                 top: 0;
@@ -42,6 +46,7 @@
                 width: 100%;
                 /* makes image act like a background image */
                 object-fit: cover;
+
             }
         }
 
@@ -50,6 +55,7 @@
             height: 581/16em;
             left: 0;
             top: 0;
+			
         }
 
         .cs-picture2 {
@@ -340,6 +346,10 @@
         }
     }
 }
+
+
+
+
 
 /* Dark Mode */
 @media only screen and (min-width: 0em) {

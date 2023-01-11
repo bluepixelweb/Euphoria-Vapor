@@ -32,13 +32,23 @@
     width: 39.4375em;
     height: 39.75em;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #sbs .cs-picture {
     border-radius: 1.5em;
     /* clips img tag corners */
     overflow: hidden;
-    position: absolute;
+    position: relative;
     display: block;
+    margin-left: 0 auto;
   }
   #sbs .cs-picture img {
     position: absolute;

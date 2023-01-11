@@ -914,3 +914,6 @@
     background: #061623;
   }
 }
+.visually-hidden {
+  visibility: hidden;
+}
