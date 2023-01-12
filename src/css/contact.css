@@ -270,6 +270,9 @@
        object-fit: cover;
   }
 }
+a {
+  font-size: var(--bodyFontSize);
+}
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75em) {
   #cs-contact #cs-form {
@@ -468,7 +471,6 @@
 @media only screen and (min-width: 0em) {
   body.dark-mode a {
     color: #79c9ee;
-    font-size: var(--bodyFontSize);
   }
   body.dark-mode .container > a {
     color: white;
