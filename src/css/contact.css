@@ -97,7 +97,8 @@
     margin-bottom: clamp(2rem, 6.3vw, 3rem);
   }
   #cs-contact #cs-form input,
-  #cs-contact #cs-form textarea {
+  #cs-contact #cs-form textarea,
+  #cs-contact #cs-form select {
     font-size: 1rem;
     width: 100%;
     height: 4rem;
@@ -112,7 +113,8 @@
     transition: border .3s;
   }
   #cs-contact #cs-form input:hover,
-  #cs-contact #cs-form textarea:hover {
+  #cs-contact #cs-form textarea:hover,
+  #cs-contact #cs-form select:hover {
     border: 1px solid var(--primary);
   }
   #cs-contact #cs-form textarea {
@@ -477,32 +479,37 @@
   }
   body.dark-mode #cs-contact #cs-form label,
   body.dark-mode #cs-contact #cs-form input,
-  body.dark-mode #cs-contact #cs-form textarea {
+  body.dark-mode #cs-contact #cs-form textarea,
+  body.dark-mode #cs-contact #cs-form select {
     background-color: transparent;
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #cs-contact #cs-form label::-webkit-input-placeholder,
   body.dark-mode #cs-contact #cs-form input::-webkit-input-placeholder,
-  body.dark-mode #cs-contact #cs-form textarea::-webkit-input-placeholder {
+  body.dark-mode #cs-contact #cs-form textarea::-webkit-input-placeholder,
+  body.dark-mode #cs-contact #cs-form select::-webkit-input-placeholder {
     /* lighten up the color of the text by 40%*/
     -webkit-filter: brightness(1.4);
             filter: brightness(1.4);
   }
   body.dark-mode #cs-contact #cs-form label:-ms-input-placeholder,
   body.dark-mode #cs-contact #cs-form input:-ms-input-placeholder,
-  body.dark-mode #cs-contact #cs-form textarea:-ms-input-placeholder {
+  body.dark-mode #cs-contact #cs-form textarea:-ms-input-placeholder,
+  body.dark-mode #cs-contact #cs-form select:-ms-input-placeholder {
     /* lighten up the color of the text by 40%*/
     filter: brightness(1.4);
   }
   body.dark-mode #cs-contact #cs-form label::-ms-input-placeholder,
   body.dark-mode #cs-contact #cs-form input::-ms-input-placeholder,
-  body.dark-mode #cs-contact #cs-form textarea::-ms-input-placeholder {
+  body.dark-mode #cs-contact #cs-form textarea::-ms-input-placeholder,
+  body.dark-mode #cs-contact #cs-form select::-ms-input-placeholder {
     /* lighten up the color of the text by 40%*/
     filter: brightness(1.4);
   }
   body.dark-mode #cs-contact #cs-form label::placeholder,
   body.dark-mode #cs-contact #cs-form input::placeholder,
-  body.dark-mode #cs-contact #cs-form textarea::placeholder {
+  body.dark-mode #cs-contact #cs-form textarea::placeholder,
+  body.dark-mode #cs-contact #cs-form select::placeholder {
     /* lighten up the color of the text by 40%*/
     -webkit-filter: brightness(1.4);
             filter: brightness(1.4);
