@@ -473,7 +473,14 @@
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
     body.dark-mode {
-        #cs-contact {
+        a {
+			color:rgb(121, 201, 238);
+			font-size: var(--bodyFontSize);
+		}
+		.container > a {
+			color: white;
+		}
+		#cs-contact {
             .cs-text, .cs-title {
                 color: var(--bodyTextColorWhite);
             }

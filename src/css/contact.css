@@ -464,6 +464,13 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
+  body.dark-mode a {
+    color: #79c9ee;
+    font-size: var(--bodyFontSize);
+  }
+  body.dark-mode .container > a {
+    color: white;
+  }
   body.dark-mode #cs-contact .cs-text,
   body.dark-mode #cs-contact .cs-title {
     color: var(--bodyTextColorWhite);
