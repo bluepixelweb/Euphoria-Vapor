@@ -5,6 +5,28 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
 
+	.nicotine-warning-container {
+		background-color: black;
+		border: 6px solid white;
+		width: 100vw;
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// position: relative;
+		height: 75px;
+		z-index: 9000;
+		p {
+			flex-basis: 80%;
+			color: white;
+			text-align: center;
+			font-size: .8rem;
+
+		}
+	}
+
     // Website colors
     :root {
         --primary: #826cc9;
@@ -23,6 +45,11 @@
         --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 16/16rem;
     }
 
+
+
+	
+
+	
     // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
     
     /* roboto-regular - latin */
@@ -179,7 +206,7 @@
     //Navigation Styles
     #navigation {
         position: fixed;
-        top: 0;
+        top: 75px;
         left: 0;
         width: 100%;
         z-index: 10000;
@@ -426,6 +453,8 @@
     // On Scroll Transitions
     body.scroll {
         #navigation {
+			top: 0px;
+
             .background-color-div {
                 height: 100%;
                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -471,11 +500,23 @@
     }
 
     // Navigation Styles
+
+	.nicotine-warning-container {
+		height: 50px;
+		p {
+			flex-basis: 80%;
+			color: white;
+			text-align: center;
+			font-size: clamp(1rem, 1.95vw, 1.1rem);
+
+		}
+	}
+
     #navigation {
         width: 100%;
         height: 100/16rem;
         position: fixed;
-        top: 0;
+        top: 50px;
         left: 0;
         z-index: 200000;
         padding: 0;
@@ -517,6 +558,7 @@
 
         // Navbar Menu
         #navbar-menu {
+			top: 50px;
             ul {
                 padding: 0;
                 display: flex;
