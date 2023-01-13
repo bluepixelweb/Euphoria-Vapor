@@ -92,6 +92,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #cs-contact #cs-form .select-store-container {
+    gap: 2rem;
+  }
   #cs-contact #cs-form .cs-label-message {
     /* 32px - 48px */
     margin-bottom: clamp(2rem, 6.3vw, 3rem);
