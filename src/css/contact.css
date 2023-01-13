@@ -114,6 +114,7 @@
             box-sizing: border-box;
     -webkit-transition: border .3s;
     transition: border .3s;
+    color: black;
   }
   #cs-contact #cs-form input:hover,
   #cs-contact #cs-form textarea:hover,
