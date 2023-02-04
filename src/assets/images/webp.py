@@ -10,7 +10,6 @@ except ImportError:
     print("Please install PIL and try again.")
     sys.exit(1)
 
-
 def convert_to_webp(image_path):
     """
     Convert the given image to a WebP image.
@@ -28,6 +27,22 @@ def convert_to_webp(image_path):
     image.save(webp_path, "webp")
     print(f"Converted {image_path} to {webp_path}")
 
+def convert_to_avif(image_path):
+    """
+    Convert the given image to an AVIF image.
+    """
+    # Open the image
+    image = Image.open(image_path)
+
+    # Check if an AVIF version of the image already exists
+    avif_path = Path(image_path.with_suffix(".avif"))
+    if avif_path.exists():
+        print(f"{avif_path} already exists, skipping conversion.")
+        return
+
+    # Save the image as an AVIF
+    image.save(avif_path, "avif")
+    print(f"Converted {image_path} to {avif_path}")
 
 def main():
     # Get the list of all files in the current directory
@@ -36,10 +51,10 @@ def main():
     # Filter the list to only include PNG and JPEG/JPG images
     image_files = [f for f in files if f.lower().endswith((".png", ".jpg", ".jpeg"))]
 
-    # Convert each image to WebP
+    # Convert each image to WebP and AVIF
     for image_file in image_files:
         convert_to_webp(Path(image_file))
-
+        convert_to_avif(Path(image_file))
 
 if __name__ == "__main__":
     main()
