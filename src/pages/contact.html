@@ -3,7 +3,7 @@ layout: 'base.html'
 description: 'Contact Euphoria Vapor'
 metaTitle: 'Title that shows up on google searches'
 tagTitle: 'Contact Us | Euphoria Vapor | Cleveland, Ohio'
-permalink: 'contact/'
+permalink: 'contact-middleburg/'
 eleventyNavigation:
     key: Contact
     order: 600
@@ -38,33 +38,36 @@ eleventyNavigation:
 <!-- ============================================ -->
 <!--                Contact Form                  -->
 <!-- ============================================ -->
-<script language="JavaScript">
-<!-- 
-function goto(form) { var index=form.select.selectedIndex
-if (form.select.options[index].value != "0") {
-location=form.select.options[index].value;}}
-//--></script>
 
 <section id="cs-contact">
     <div class="cs-container">
-        <form id="cs-form" name="Store-selector">
+        <form id="cs-form" name="Contact Form" data-netlify="true" method="POST">
             <div class="cs-content">
                 <span class="cs-topper">Contact</span>
                 <h2 class="cs-title">Get in Touch</h2>
                 <p class="cs-text">
-                    Get in contact with any questions or concerns you have, or see our <a href="/locations">Locations page</a> to call any one of our three locations.
+                    Get in contact with any questions or concerns you have, or see our <a href="/locations">Locations</a> to reach out to an one of our three locations.
                 </p>
             </div>
-			<label id="select-store-container">Which location would you like to contact?</label>
-				<select name="select" id="select-store" ONCHANGE="goto(this.form)">
-					<option value=#">Pick a location</option>
-					<option value="/contact-middleburg">Any</option>
-					<option value="/contact-middleburg">Middleburg Hts.</option>
-					<option value="/contact-middleburg">Parma</option>
-					<option value="/contact-fairview">Fairview</option>
-				</select>
-        	</form>
-    	</div>
+            <label>
+                Name
+                <input required type="text" id="name" name="name" placeholder="Name">
+            </label>
+            <label>
+                Email
+                <input required type="text" id="email" name="email" placeholder="Email">
+            </label>
+            <label>
+                Phone
+                <input required type="text" id="phone" name="phone" placeholder="Phone">
+            </label>
+            <label class="cs-label-message">
+                Message
+                <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+            </label>
+            <button class="cs-button-solid" type="submit">Submit Message</button>
+        </form>
+    </div>
 </section>
 
 
@@ -84,3 +87,4 @@ location=form.select.options[index].value;}}
         <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/landing.jpg" alt="Wide shot of the interior of our Middleburg location" width="1920" height="1280">
         </picture>
 </section>
+                                
